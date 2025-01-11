@@ -256,12 +256,6 @@ client.on("ready", async () => {
     });
 })
 
-//TODO
-//rewrite voice join area
-//rewrite serverdata storage
-//write voice channel handling
-
-
 
 client.on('interactionCreate', async interaction => {
     //console.log(interaction.message.components[0].components[0].customId, interaction.customId)
