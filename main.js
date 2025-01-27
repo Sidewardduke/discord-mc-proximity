@@ -291,6 +291,7 @@ client.on('interactionCreate', async interaction => {
 });
 
 
+
 client.on('voiceStateUpdate', async (oldState, newState) => {
     if (serverSettingsDatabase.has(newState.guild.id)) {
         if (newState.channel == null || (newState.channel.parent.id != serverSettingsDatabase.get(newState.guild.id).categoryID)) {
